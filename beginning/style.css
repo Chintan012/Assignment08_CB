@@ -7,7 +7,7 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid cadetblue;
+    border: 1px solid mediumorchid;
     border-radius: 4px;
     resize: vertical;
 }
@@ -29,6 +29,17 @@ input[type=button] {
     float: right;
 }
 
+input[type=tableButton] {
+    background-color: reee;
+    color: white;
+    padding: 12px 20px;
+    width: 100px;
+    border: none;
+    margin-top: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 input[type=button]:hover {
     background-color: cadetblue;
 }
@@ -39,6 +50,11 @@ input[type=button]:hover {
     width: 50%;
 }
 
+.showEmployees {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 table {
     width: 50%;
 }
@@ -46,7 +62,7 @@ table {
 table,
 th,
 td {
-    border: 1px solid cadetblue;
+    border: 1px solid white;
     border-collapse: collapse;
 }
 
@@ -56,17 +72,12 @@ td {
     text-align: left;
 }
 
-table#t01 tr:nth-child(even) {
-    background-color: #eee;
+tr:first-child { 
+    background-color: mediumorchid; 
 }
 
-table#t01 tr:nth-child(odd) {
-    background-color: #fff;
-}
-
-table#t01 th {
-    background-color: darkcyan;
-    color: white;
+tr:nth-child(even) {
+    background-color: lightblue;
 }
 
 .col-25 {
@@ -86,3 +97,4 @@ table#t01 th {
     display: table;
     clear: both;
 }
+

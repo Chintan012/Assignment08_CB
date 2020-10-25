@@ -83,14 +83,17 @@ submit.addEventListener("click", function() {
         employeeList.push([employeeName, employeeTitle, employeeExtension]);
         row = 1;
         displayEmployees();
+        document.getElementById("form").reset();
     }
 });
 
 function addEmployee(employeeName, employeeTitle, employeeExtension) {
 
     employeeList.push([employeeName, employeeTitle, employeeExtension]);
+    document.getElementById("form").reset();
     row = 1;
     displayEmployees();
+
 }
 
 function deleteEmployee(employee) {
@@ -100,22 +103,22 @@ function deleteEmployee(employee) {
     displayEmployees();
 }
 
-function validation() {
+// function validation() {
 
-    var name = $("employeeName").value;
-    var title = $("employeeTitle").value;
-    var extension = $("employeeExtension").value;
+//     var name = $("employeeName").value;
+//     var title = $("employeeTitle").value;
+//     var extension = $("employeeExtension").value;
 
-    if (name === "")
-        $("errorInEmployeeName").innerHTML = "Enter Valid Name";
+//     if (name === "")
+//         $("errorInEmployeeName").innerHTML = "Enter Valid Name";
 
-    else if (title === "")
-        $("errorInEmployeeTitle").innerHTML = "Enter Valid Title";
+//     else if (title === "")
+//         $("errorInEmployeeTitle").innerHTML = "Enter Valid Title";
 
-    else if (extension === "")
-        $("errorInEmployeeExtension").innerHTML = "Enter Valid Extension";
+//     else if (extension === "")
+//         $("errorInEmployeeExtension").innerHTML = "Enter Valid Extension";
 
-    else addEmployee(name, title, extension);
-}
+//     else addEmployee(name, title, extension);
+// }
 
 

@@ -13,7 +13,7 @@
 
     <div class="container">
         <h3> Add Employee</h2>
-        <form>
+        <form id="form">
             <div class="row">
                 <div class="col-25">
                     <label for="employeeName">Name:</label>
@@ -52,13 +52,15 @@
 
     <br><br><br>
 
-    <h2>Showing <span id="employees"></span> Employees</h2>
+    <p class="showEmployees">
+        Showing <span id="employees"></span> Employees
+    </p>
     <table id="display">
         <tr>
             <th>Name</th>
             <th>Title</th>
             <th>Extension</th>
-            <th type="button">Delete</th>
+            <th type="button"></th>
         </tr>
     </table>
     <script src="js/employee-management.js "></script>
