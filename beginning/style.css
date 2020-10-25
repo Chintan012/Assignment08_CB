@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid cadetblue;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 1px 2px 2px 0;
+    display: inline-block;
+}
+
+input[type=button] {
+    background-color: mediumorchid;
+    color: white;
+    padding: 12px 20px;
+    width: 100px;
+    border: none;
+    margin-top: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=button]:hover {
+    background-color: cadetblue;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%;
+}
+
+table {
+    width: 50%;
+}
+
+table,
+th,
+td {
+    border: 1px solid cadetblue;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+table#t01 th {
+    background-color: darkcyan;
+    color: white;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
